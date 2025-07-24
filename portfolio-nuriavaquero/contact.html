@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfoli Núria</title>
+  <link rel="stylesheet" href="style/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+</head>
+
+
+
+<script>
+  // HEADER
+  fetch("components/header.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+
+      // Marcar enllaç actiu
+      const currentPage = window.location.pathname.split("/").pop();
+      const links = document.querySelectorAll(".nav-link");
+      links.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+          link.classList.add("active");
+        }
+      });
+    })
+    .catch(err => console.error("Error carregant el header:", err));
+
+  // FOOTER
+  fetch("components/footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    })
+    .catch(err => console.error("Error carregant el footer:", err));
+</script>
+
+
+
+
+
+<body>
+
+  <div id="header" class="header"></div>
+
+  <main>
+    <div class="contact">
+    <h1>Hello! I'm Núria</h1>
+    <h1>Contact page</h1>
+    </div>
+
+  </main>
+  <div id="footer"></div>
+
+
+
+
+</body>
+</html>
