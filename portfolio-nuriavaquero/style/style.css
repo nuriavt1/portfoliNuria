@@ -166,6 +166,10 @@ p{
   align-items: center;
 }
 
+.presentation{
+  width: 80%;
+}
+
 /*cv EXPERIENCE*/
 .cv {
   display: grid;
@@ -236,4 +240,17 @@ gap: 20px;
 .download p{
     color: #FFFFFF;
     margin: 0%;
+}
+
+
+/*RESPONSIVE*/
+@media (max-width: 900px){
+  .cv {
+  display: grid;
+  grid-template-columns: 1fr ;
+  width: 80%;
+}
+  #sect-dos{
+   grid-column: 1;
+}
 }
