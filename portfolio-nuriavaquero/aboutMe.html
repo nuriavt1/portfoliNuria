@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>About Me – Portfoli Núria</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<script>
+    // HEADER
+    fetch("components/header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+
+            // Marcar enllaç actiu
+            const currentPage = window.location.pathname.split("/").pop();
+            const links = document.querySelectorAll(".nav-link");
+            links.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("active");
+                }
+            });
+        })
+        .catch(err => console.error("Error carregant el header:", err));
+
+    // FOOTER
+    fetch("components/footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        })
+        .catch(err => console.error("Error carregant el footer:", err));
+</script>
+
+
+
+<body>
+
+    <div id="header"></div>
+
+    <main class="about">
+        <h2>About Me</h2>
+        <h1>Hi!, I'm Núria</h1>
+        <p>Currently, I study the degree in Multimedia at CITM, UPC. I am a very creative person and very eager to
+            contribute to our projects related to the creation and design of web pages, UX, UI and video games,
+            application development.</p>
+        <button class="button-style">DOWLOAD MY CV</button>
+
+        <section class="cv">
+            <div id="sect-work">
+                <h3>Working Experience</h3>
+                <div id="experience"></div>
+            </div>
+
+            <div id="sect-dos">
+                <h3>Education</h3>
+                <div id="education"></div>
+
+                <h3>Language</h3>
+                <div id="language"></div>
+            </div>
+
+        </section>
+
+        <section id="download-section">
+            <div class="download">
+                <p>Download my CV</p> <img src="img/icona-descarregar.svg" alt="download icon">
+            </div>
+            <div class="download">
+                <p>Download my portfolio</p> <img src="img/icona-descarregar.svg" alt="download icon">
+            </div>
+        </section>
+
+    </main>
+    <div id="footer"></div>
+    <script>
+        fetch("data/cv.json")
+            .then(res => res.json())
+            .then(data => {
+                // EXPERIENCE
+                const expContainer = document.getElementById("experience");
+                data.workingExperience.forEach(exp => {
+                    const item = document.createElement("div");
+                    item.classList.add("experience-item");
+                    item.innerHTML = `
+          <p class="p-date">${exp.date}</p>
+          <p class="p-title">${exp.title}</p>
+          <p class="p-company">${exp.company}</p>
+          <p class="p-description">${exp.description}</p>
+        `;
+                    expContainer.appendChild(item);
+                });
+
+                // EDUCATION
+                const eduContainer = document.getElementById("education");
+                data.education.forEach(edu => {
+                    const item = document.createElement("div");
+                    item.classList.add("experience-item");
+                    item.innerHTML = `
+          <p class="p-date">${edu.date}</p>
+          <p class="p-title">${edu.title}</p>
+          <p class="p-company">${edu.school}</p>
+          <p class="p-description">${edu.description}</p>
+        `;
+                    eduContainer.appendChild(item);
+                });
+
+                // LANGUAGES
+                const langContainer = document.getElementById("language");
+                data.language.forEach(lang => {
+                    const item = document.createElement("p");
+                    item.classList.add("language-item");
+                    item.textContent = `${lang.language}: ${lang.level}`;
+                    langContainer.appendChild(item);
+                });
+            })
+            .catch(err => console.error("Error carregant el JSON:", err));
+    </script>
+
+
+
+</body>
+
+</html>

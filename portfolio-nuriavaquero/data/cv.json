@@ -1,0 +1,50 @@
+{
+  "workingExperience": [
+    {
+      "date": "Jun 2024 - Sept 2024",
+      "title": "Digital Product Designer Intern",
+      "company": "The North Studio",
+      "description": "Working in the creation of Grup NN websites, developing tasks like design, prototyping and programming for the use of Google Maps Platform and APIs."
+    },
+    {
+      "date": "2023 - 2024",
+      "title": "Creation Lab with 3Cat",
+      "company": "Asociated with Corporació Catalana de Mitjans Audiovisuals and CITM",
+      "description": "Ideation and creation of a gamified experience for the 3Cat streaming platform."
+    },
+    {
+      "date": "2023",
+      "title": "Giravolt Crealab Project",
+      "company": "Asociated with Agencia de Patrimoni Cultural and CITM",
+      "description": "Design and creation of a VR video game with the aim of bringing Catalan cultural heritage closer to the population."
+    }
+  ],
+  "education": [
+     {
+      "date": "2021 - 2025",
+      "title": "Degree in Multimedia",
+      "school": "CITM - Universitat Politècnica de Catalunya",
+      "description": "Focused on web development, UX/UI design, and interactive media."
+    },
+         {
+      "date": "2019 - 2021",
+      "title": "Batxillerat Científic",
+      "school": "Jesuïtes Gràcia - Kostka",
+      "description": ""
+    }
+  ],
+  "language": [
+     {
+      "language": "Catalan",
+      "level": "Native"
+    },
+    {
+      "language": "Spanish",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "C1"
+    }
+  ]
+}

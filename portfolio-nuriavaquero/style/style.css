@@ -1,0 +1,239 @@
+html{
+    background-color: #F4F3ED;
+}
+
+.hero {
+  background-image: url("../img/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* o l'alçada que vulguis */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  color: white; /* assegura’t que es veu bé el text */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+h1{
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 64px;
+  letter-spacing: -0.04em; /* -4% */
+  line-height: 1.2; /* aproximació de 'Auto' */
+}
+h2 {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 700; /* ja és bold */
+  font-size: 24px;
+  letter-spacing: 0.15em;
+  color: #E63A27;
+  text-transform: uppercase; /* AIXÒ força les majúscules */
+}
+
+h3{
+    font-family: 'Urbanist', sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 36px;
+  letter-spacing: -0.04em; /* -4% */
+  line-height: 1.2; /* aproximació de 'Auto' */
+   color: #6DB8BE;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+  color: #333036;
+  font-size: 16px;
+}
+
+/*Estilo botones*/
+/* Estilo botones */
+.button-style {
+  border: 1px solid #E63A27;
+  border-radius: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  font-family: 'Covered by Your Grace', cursive;
+  font-size: 24px;
+  color: #E63A27;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-style:hover {
+  background-color: #E63A27;
+  color: white;
+}
+
+
+
+
+/*COMPONENT HEADER*/
+.header{
+    position: fixed;
+    width: 100%;
+}
+
+.header-comp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;/* o canvia-ho per un color més personal */
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-comp img {
+  height: 40px;
+}
+
+.header-comp ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.header-comp li a {
+  text-decoration: none;
+  color: #E63A27; /* o el color del teu branding */
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-family: "Urbanist", sans-serif;
+}
+
+.header-comp li a:hover {
+  color: #000; /* o un altre efecte hover */
+}
+.nav-link.active {
+  color: #000;
+  font-weight: 700;
+  border-bottom: 2px solid #000; /* o un efecte més modern */
+}
+
+/*COMPONENT FOOTER*/
+.footer-comp{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+ 
+}
+.footer-comp ul{
+ display: flex;
+  list-style: none;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.footer-comp p{
+     font-family: 'Raleway', sans-serif;
+     color: #E63A27;
+     font-size: 14px;
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*cv EXPERIENCE*/
+.cv {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dues columnes iguals */
+  gap: 80px; /* Opcional: espai entre columnes i files */
+  width: 80%;
+}
+
+#sect-work{
+   grid-column: 1;
+}
+#sect-dos{
+   grid-column: 2;
+}
+
+
+.experience-item{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+   border-bottom: 1px solid #333036;
+}
+
+.p-date{
+   font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+      color: #333036;
+      margin: 0px;
+}
+.p-title{
+     font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+      color: #333036;
+      margin: 0px;
+}
+.p-company{
+       font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+      color: #E63A27;
+      font-weight: 600;
+      margin: 0px;
+}
+.p-description{
+       font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+      color: #333036;
+      margin: 0px;
+}
+
+#download-section{
+background-color: #E63A27;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 50px;
+padding-bottom: 50px;
+gap: 20px;
+}
+.download{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.download p{
+    color: #FFFFFF;
+    margin: 0%;
+}
