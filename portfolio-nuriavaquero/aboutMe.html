@@ -73,6 +73,8 @@
             </div>
 
         </section>
+        <h3>Awards and Recognitions</h3>
+        <div id="awards"></div>
 
         <section id="download-section">
             <div class="download">
@@ -82,6 +84,8 @@
                 <p>Download my portfolio</p> <img src="img/icona-descarregar.svg" alt="download icon">
             </div>
         </section>
+
+
 
     </main>
     <div id="footer"></div>
@@ -125,6 +129,25 @@
                     item.textContent = `${lang.language}: ${lang.level}`;
                     langContainer.appendChild(item);
                 });
+
+                // AWARDS
+                const awardContainer = document.getElementById("awards");
+                data.awards.forEach(award => {
+                    const item = document.createElement("div");
+                    item.classList.add("award-item");
+                    item.innerHTML = `
+    <div class="text-award">
+        <p class="p-date">${award.date}</p>
+    <p class="p-title">${award.title}</p>
+    <p class="p-company">${award.issued}</p>
+    <p class="p-description">${award.description}</p>
+        </div>
+                    
+    <img src="${award.image}" alt="${award.issued}">
+  `;
+                    awardContainer.appendChild(item);
+                });
+
             })
             .catch(err => console.error("Error carregant el JSON:", err));
     </script>

@@ -46,5 +46,23 @@
       "language": "English",
       "level": "C1"
     }
+  ],
+  "awards": [
+    {
+        "date": "2021",
+        "title": "Premi Recerca Jove per fomentar l'esperit científic del jovent (PRJ 2021)",
+        "issued": "Generalitat de Catalunya",
+        "description": "Award for the research work 'Senile Dementia: A growing challenge of our time', which includes the creation of a mobile application prototype for dementia detection.",
+        "link": "https://www.fje.edu/ca/jesuites-gracia/noticies/una-alumna-de-jesuites-gracia-premiada-en-els-premis-de-recerca-jove-2021",
+        "image": "img/recercaJove.png"
+    },
+        {
+        "date": "2022",
+        "title": "Hackathon Giravolt Crea Lab Award",
+        "issued": "Dept. de Cultura Generalitat de Catalunya  and UPC",
+        "description": "Award for the best cultural and technological project idea that aims to bring Catalan cultural heritage closer to the public through technology.",
+        "link": "https://www.fje.edu/ca/jesuites-gracia/noticies/una-alumna-de-jesuites-gracia-premiada-en-els-premis-de-recerca-jove-2021",
+        "image": "img/giravolt.png"
+    }
   ]
 }

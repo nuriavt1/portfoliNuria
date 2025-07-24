@@ -221,6 +221,17 @@ p{
       margin: 0px;
 }
 
+#awards{
+  display: flex;
+  width: 80%;
+}
+.text-award{
+  height: 217px;
+}
+.award-item{
+  width: 567px;
+}
+
 #download-section{
 background-color: #E63A27;
 width: 100%;
