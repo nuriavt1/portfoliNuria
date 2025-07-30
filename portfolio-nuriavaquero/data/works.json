@@ -1,0 +1,184 @@
+{
+    "Videogame": [
+        {
+            "title": "Masks and Marquises, a Palau Moja's Story",
+            "year": "2022",
+            "client": "Giravolt Crea Lab Innovation Lab, formed by CITM-UPC and the Catalan Agency for Cultural Heritage through its Giravolt program.",
+            "description": "Design and development of a multiplayer VR game for Oculus Quest 3 set in the Baroque-era Palau Moja.",
+            "long-description": "Design and creation of a multiplayer virtual reality video game for Oculus Quest 3. The game is set in the Palau Moja during the Baroque era. On Carnival Day, a masquerade ball takes place. But unexpectedly, Antonio López, a wealthy man who hides many secrets and is also the host of the party, is found dead in the middle of the room. Players, as partners involved in fraudulent businesses, must destroy the evidence and avoid being killed by the infiltrator.",
+            "fields": "HUD Design, Visual Identity Design of the Game, 3D Modeling, 3D Model Texturing, Game Design",
+            "software": "Unity, Adobe Substance, Maya, Adobe Photoshop, Figma",
+            "link": "",
+            "img": "img/works/giravolt.png"
+        },
+        {
+            "title": "Kitchen Hunt",
+            "description": "Design and creation of a 3D computer videogame with Unity.",
+            "fields": "Visual Identity, Character Design, 3D Modeling, 3D Model Texturing, Game Design",
+          
+            "software": "Unity, Adobe Substance, Maya, Adobe Photoshop, Figma",
+             "link": "https://nataliavv1.itch.io/kitchen-hunt?fbclid=PAZXh0bgNhZW0CMTEAAaaSWRPsE3nrVYPWOHDJR9HayFmm3EUCSaHtQnftLe2VphKHiF2tV2qgl_s_aem_p2eaqqWCDGXJywFlxLEN8Q",
+            "img": "img/works/kitchen-hunt.png"
+        },
+                {
+            "title": "Magic Room",
+              "description": "Design and creation of a virtual reality video game for Oculus Quest with Unity.",
+            "fields": "Game Design",
+            "software": "Unity, Adobe Substance, Maya, Adobe Photoshop, Figma",
+          "link": "https://youtu.be/JSEriLy_jm4",
+            "img": "img/works/magic-room.png"
+        }
+    ],
+    "Visual identity": [
+        {
+            "title": "Levitate, energy drink brand",
+            "description": "Creation of the visual identity and identity manual for a natural energy drink brand.",
+            "fields": "Branding, Graphic Design, Image edition",
+            "software": "Adobe Photoshop, Adobe Illustrator",
+            "link": "https://www.playbook.com/s/nuriav/yfGYFaKiWBdPfMNZjGukeCSX?assetToken=9LT8rREJx9gVVEfyM7gxdUUX",
+            "img": "img/works/levitate.png"
+        },
+        {
+            "title": "Farmàcia Isabel Tell",
+            "description": "Creation of the visual identity for Isabel Tell Pharmacy. The logo draws inspiration from nature and the distinctive windows of the Sant Pau Art Nouveau Site, located near the pharmacy.",
+            "fields": "Branding, Graphic Design",
+            "software": "Adobe Photoshop, Adobe Illustrator, Adobe InDesign",
+            "link": "",
+            "img": "img/works/farmacia.png"
+        }
+    ],
+    "Advertising Campaign": [
+        {
+            "title": "Advertising Spot for Vicio",
+            "description": "Creation of an advertising campaign for the VICIO brand. This includes 1 video advertising spot and 3 images.",
+            "fields": "Script and Storyboard, Video Production, Video Post-Production, Photography, Photo Editing",
+            "software": "Adobe Premiere, Adobe After Effects, DaVinci Resolve, Adobe Photoshop",
+            "link": "https://youtu.be/-d0ecNgpMxA",
+            "img": "img/works/vicio.png"
+        }
+    ],
+    "2D Animation": [
+        {
+            "title": "Teaser “Las Manos Que Crecen”",
+            "description": "Creation of a 2D Animation Teaser inspired by the short story \"Las Manos Que Crecen\" by Julio Cortázar.",
+            "fields": "Script, Storyboard, and Pre-production, Concept Art and Character Design, 2D Animation",
+            "software": "Adobe Photoshop, Adobe Illustrator, Toon Boom Harmony",
+            "link": "https://youtu.be/mDIbqcnRuZU",
+            "img": "img/works/las-manos.png"
+        }
+    ],
+    "Postproduction": [
+        {
+            "title": "Chernobyl Opening",
+            "description": "Creation of an opening for the series Chernobyl, using the music and visual structure of the Narcos intro.",
+            "fields": "Video Post-Production, Photo Editing",
+            "software": "Adobe Premiere, Adobe After Effects, Adobe Photoshop",
+            "link": "https://youtu.be/lOEURC_jeuQ",
+            "img": "img/works/chernobyl.png"
+        },
+        {
+            "title": "Stranger Things clock",
+            "description": "Creation of a Stranger Things video, using the expressions time, index, loopOut, and random in After Effects.",
+            "fields": "Video Post-Production, Illustration",
+            "software": "Adobe Illustrator, Adobe After Effects",
+            "link": "https://youtu.be/6qXUdbj3CvM",
+            "img": "img/works/stranger-things.png"
+        }
+    ],
+    "Magazine Design": [
+        {
+            "title": "Cooking Magazine",
+            "description": "Creation of the visual identity and interface for a yoga mobile application.",
+            "fields": "Graphic Design, Layout and Composition",
+            "software": "Adobe Illustrator",
+            "link": "",
+            "img": "img/works/cooking.png"
+        },
+        {
+            "title": "Underwater Magazine",
+            "description": "Design of a Marine-Themed Magazine. Two versions of the magazine have been created: one for print and another interactive version.",
+            "fields": "Graphic Design, Layout and Composition, Creation of an interactive PDF",
+            "software": "Adobe InDesign",
+            "link": "",
+            "img": "img/works/underwater.png"
+        }
+    ],
+    "UI Design": [
+        {
+            "title": "Chi Life, a yoga App",
+            "description": "Creation of the visual identity and interface for a yoga mobile application.",
+            "fields": "Branding, Graphic Design, UI Design",
+            "software": "Adobe Photoshop, Adobe Illustrator",
+            "link": "",
+            "img": "img/works/chi-life.png"
+        },
+        {
+            "title": "La Carta dels Reis Mags",
+            "description": "Front-End Design and Development of an e-commerce website for ordering gifts for the Three Kings.",
+            "fields": "Web Design, Front-end development",
+            "software": "Visual Studio Code, Filezilla",
+            "languages": "HTML, CSS, Java Script",
+            "link": "",
+            "img": "img/works/carta.png"
+        },
+        {
+            "title": "Next Cast, a Podcast website",
+            "description": "Creation and design of a website using React and the Spotify Web API",
+            "fields": "UI Design, Website development",
+            "software": "Visual Studio Code",
+            "languages": "React, JavaScript, CSS, HTML",
+            "link": "https://nextcast-nurias-projects-e4c7ec93.vercel.app/",
+            "img": "img/works/next-cast.png"
+        },
+        {
+            "title": "EVENT+, A Website for Events",
+            "description": "Creation and design of a website to inform about cultural events with an editor for the database.",
+            "fields": "Web Design, Front-end development, Back-end development with PHP",
+            "software": "Visual Studio Code, Filezilla, Figma, Maria DB",
+            "languages": "HTML, CSS, PHP, SQL",
+            "link": "",
+            "img": "img/works/event.png"
+        },
+        {
+            "title": "MyRecipeBook",
+            "description": "Creation and design of an Android mobile application to create and save recipes.",
+            "fields": "UI Design, Andoid development",
+            "software": "Andoid Studio, Figma",
+            "languages": "Flutter, Dart",
+            "link": "",
+            "img": "img/works/my-recipe.png"
+        }
+    ],
+    "Posters and Flyers": [
+        {
+            "title": "La Violencia es el miedo a los ideales de los demás",
+            "img": ""
+        },
+        {
+            "title": "CITM Talents",
+            "img": ""
+        },
+        {
+            "title": "Poster mar",
+            "img": ""
+        },
+        {
+            "title": "Cadaqués",
+            "img": ""
+        }
+    ],
+        "Photography": [
+        {
+            "img": "La Violencia es el miedo a los ideales de los demás"
+        },
+        {
+            "img": "CITM Talents"
+        },
+        {
+            "img": "Poster mar"
+        },
+        {
+            "img": "Cadaqués"
+        }
+    ]
+}

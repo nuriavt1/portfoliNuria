@@ -1,6 +1,11 @@
+
+
 html{
     background-color: #F4F3ED;
 }
+
+
+
 
 .hero {
   background-image: url("../img/hero.png");
@@ -164,6 +169,8 @@ p{
   display: flex;
   flex-direction: column;
   align-items: center;
+    margin: 0px;
+  padding: 0%;
 }
 
 .presentation{
@@ -221,9 +228,16 @@ p{
       margin: 0px;
 }
 
+/*AWARDS*/
+
+#awards-cards{
+  width: 80%;
+}
+
 #awards{
   display: flex;
   width: 80%;
+  gap: 33px;
 }
 .text-award{
   height: 217px;
@@ -232,6 +246,9 @@ p{
   width: 567px;
 }
 
+
+
+/*DOWNLOAD SECTION*/
 #download-section{
 background-color: #E63A27;
 width: 100%;
@@ -252,6 +269,130 @@ gap: 20px;
     color: #FFFFFF;
     margin: 0%;
 }
+
+/*PROJECTS*/
+/*PROJECTS LIST*/
+.projects-grid{
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+/*CARD PROJECTS*/
+.project-card {
+  position: relative;
+  width: 339px;
+  height: 435px;
+  margin: 1rem;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 435px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+ width: 100%;
+  height: 100%;
+  background-color: #9CC7AB; /* verd opac */
+  color: white;
+  /*padding: 1.5rem;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay-text {
+  overflow: hidden;        
+  width: 100%;           
+  height: auto;      
+  padding: 24px;          
+  color: white;
+  font-family: 'Urbanist', sans-serif;
+  box-sizing: border-box;  /* ✅ molt important per incloure padding dins la mida */
+}
+
+
+.image-wrapper:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .category {
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  color: white;
+ font-family: 'Urbanist', sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 24px;
+  letter-spacing: 0.15em; /* +15% tracking */
+  line-height: 1.2; /* ajustable si tens un valor concret a Figma */
+  text-transform: uppercase; /* opcional si vols simular l'estil majúscula */
+}
+
+.overlay h4 {
+  font-size: 1.4rem;
+  margin: 0;
+  margin-bottom: 1rem;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 36px;
+  letter-spacing: -0.04em; /* -4% tracking */
+  line-height: 1.2; /* o ajusta si Figma te da un valor concreto */
+}
+
+.overlay .short-desc {
+  font-size: 18px;
+  margin-bottom: 1rem;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+
+}
+
+.btn-more {
+  border: 1px solid white;
+  color: white;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+}
+
+.btn-more:hover {
+  background-color: white;
+  color: #4a7d5c;
+}
+
+.project-title {
+  font-size: 0.9rem;
+  color: #E63A27;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
 
 
 /*RESPONSIVE*/
