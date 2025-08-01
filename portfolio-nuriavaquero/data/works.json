@@ -1,36 +1,57 @@
 {
     "Videogame": [
         {
+            "id": 1,
             "title": "Masks and Marquises, a Palau Moja's Story",
             "year": "2022",
             "client": "Giravolt Crea Lab Innovation Lab, formed by CITM-UPC and the Catalan Agency for Cultural Heritage through its Giravolt program.",
             "description": "Design and development of a multiplayer VR game for Oculus Quest 3 set in the Baroque-era Palau Moja.",
-            "long-description": "Design and creation of a multiplayer virtual reality video game for Oculus Quest 3. The game is set in the Palau Moja during the Baroque era. On Carnival Day, a masquerade ball takes place. But unexpectedly, Antonio López, a wealthy man who hides many secrets and is also the host of the party, is found dead in the middle of the room. Players, as partners involved in fraudulent businesses, must destroy the evidence and avoid being killed by the infiltrator.",
-            "fields": "HUD Design, Visual Identity Design of the Game, 3D Modeling, 3D Model Texturing, Game Design",
+            "overview": "Design and creation of a multiplayer virtual reality video game for Oculus Quest 3. The game is set in the Palau Moja during the Baroque era. On Carnival Day, a masquerade ball takes place. But unexpectedly, Antonio López, a wealthy man who hides many secrets and is also the host of the party, is found dead in the middle of the room. Players, as partners involved in fraudulent businesses, must destroy the evidence and avoid being killed by the infiltrator.",
+            "role": "HUD Design, Visual Identity Design of the Game, 3D Modeling, 3D Model Texturing, Game Design",
             "software": "Unity, Adobe Substance, Maya, Adobe Photoshop, Figma",
             "link": "",
-            "img": "img/works/giravolt.png"
+            "img": "img/works/giravolt.png",
+            "video": "https://youtu.be/Ysv7c4oLHxw"
         },
         {
+            "id": 2,
             "title": "Kitchen Hunt",
+            "overview": "Kitchen Hunt is a 3D single-player game where the player takes on the role of Klauss, a young man overwhelmed by the pressure of inheriting the family kitchen business. Under his father Jeff’s ultimatum, Klauss must complete increasingly complex tasks in the kitchen. As his anxiety grows, the world around him distorts — reflecting his emotional state.",
+            "role": "As the artist of the team, my responsabilities focused on: Character design in Figma and Illustrator, 3D modeling of characters and kitchen environment in Maya, Texturing using Adobe Substance Painter and Photoshop and Integration of assets and materials into Unity",
             "description": "Design and creation of a 3D computer videogame with Unity.",
             "fields": "Visual Identity, Character Design, 3D Modeling, 3D Model Texturing, Game Design",
-          
             "software": "Unity, Adobe Substance, Maya, Adobe Photoshop, Figma",
-             "link": "https://nataliavv1.itch.io/kitchen-hunt?fbclid=PAZXh0bgNhZW0CMTEAAaaSWRPsE3nrVYPWOHDJR9HayFmm3EUCSaHtQnftLe2VphKHiF2tV2qgl_s_aem_p2eaqqWCDGXJywFlxLEN8Q",
-            "img": "img/works/kitchen-hunt.png"
+            "link": "https://nataliavv1.itch.io/kitchen-hunt?fbclid=PAZXh0bgNhZW0CMTEAAaaSWRPsE3nrVYPWOHDJR9HayFmm3EUCSaHtQnftLe2VphKHiF2tV2qgl_s_aem_p2eaqqWCDGXJywFlxLEN8Q",
+            "img": "img/works/kitchen-hunt.png",
+            "video": "https://youtu.be/19RqhosWCQ4",
+            "video2": "https://youtu.be/v0rCEaGLmX0"
         },
-                {
+        {
+            "id": 3,
             "title": "Magic Room",
-              "description": "Design and creation of a virtual reality video game for Oculus Quest with Unity.",
+            "description": "Design and creation of a virtual reality video game for Oculus Quest with Unity.",
             "fields": "Game Design",
             "software": "Unity, Adobe Substance, Maya, Adobe Photoshop, Figma",
-          "link": "https://youtu.be/JSEriLy_jm4",
-            "img": "img/works/magic-room.png"
+            "link": "https://youtu.be/JSEriLy_jm4",
+            "img": "img/works/magic-room.png",
+            "video": "https://youtu.be/JSEriLy_jm4"
+        },
+                {
+            "id": 18,
+            "title": "Barcimed",
+            "overview": "An interactive web app designed to guide users through a historical route in the city of Barcelona. By observing their surroundings and solving contextual riddles, users can unlock immersive 360° videos and collect educational content in the form of knowledge cards. The experience blends narrative, geolocation, and gamification to foster historical curiosity among young audiences.",
+            "description": "Creation an immersive experience to discover the Medieval Barcelona",
+            "fields": "Ux and UI Design, React, Postproduction, 360",
+            "software": "Visual Studio Code, Figma, Unity, Adobe Photoshop, Adobe Illustrator, Maya, Adobe Substance",
+            "languages": "React",
+            "link": "",
+            "img": "img/works/barcimed.png",
+            "video": "https://youtu.be/RbcJslGVbDI"
         }
     ],
     "Visual identity": [
         {
+            "id": 4,
             "title": "Levitate, energy drink brand",
             "description": "Creation of the visual identity and identity manual for a natural energy drink brand.",
             "fields": "Branding, Graphic Design, Image edition",
@@ -39,6 +60,7 @@
             "img": "img/works/levitate.png"
         },
         {
+            "id": 5,
             "title": "Farmàcia Isabel Tell",
             "description": "Creation of the visual identity for Isabel Tell Pharmacy. The logo draws inspiration from nature and the distinctive windows of the Sant Pau Art Nouveau Site, located near the pharmacy.",
             "fields": "Branding, Graphic Design",
@@ -49,44 +71,63 @@
     ],
     "Advertising Campaign": [
         {
+            "id": 6,
             "title": "Advertising Spot for Vicio",
             "description": "Creation of an advertising campaign for the VICIO brand. This includes 1 video advertising spot and 3 images.",
             "fields": "Script and Storyboard, Video Production, Video Post-Production, Photography, Photo Editing",
             "software": "Adobe Premiere, Adobe After Effects, DaVinci Resolve, Adobe Photoshop",
             "link": "https://youtu.be/-d0ecNgpMxA",
-            "img": "img/works/vicio.png"
+            "img": "img/works/vicio.png",
+            "video": "https://youtu.be/-d0ecNgpMxA"
         }
     ],
     "2D Animation": [
         {
+            "id": 7,
             "title": "Teaser “Las Manos Que Crecen”",
             "description": "Creation of a 2D Animation Teaser inspired by the short story \"Las Manos Que Crecen\" by Julio Cortázar.",
             "fields": "Script, Storyboard, and Pre-production, Concept Art and Character Design, 2D Animation",
             "software": "Adobe Photoshop, Adobe Illustrator, Toon Boom Harmony",
             "link": "https://youtu.be/mDIbqcnRuZU",
-            "img": "img/works/las-manos.png"
+            "img": "img/works/las-manos.png",
+            "video": "https://youtu.be/mDIbqcnRuZU"
         }
     ],
     "Postproduction": [
         {
+            "id": 8,
             "title": "Chernobyl Opening",
             "description": "Creation of an opening for the series Chernobyl, using the music and visual structure of the Narcos intro.",
+            "overview": "Creation of an opening for the series Chernobyl, using the music and visual structure of the Narcos intro.",
             "fields": "Video Post-Production, Photo Editing",
             "software": "Adobe Premiere, Adobe After Effects, Adobe Photoshop",
             "link": "https://youtu.be/lOEURC_jeuQ",
-            "img": "img/works/chernobyl.png"
+            "img": "img/works/chernobyl.png",
+            "video": "https://youtu.be/lOEURC_jeuQ"
         },
         {
+            "id": 9,
             "title": "Stranger Things clock",
             "description": "Creation of a Stranger Things video, using the expressions time, index, loopOut, and random in After Effects.",
+            "overview": "Creation of a Stranger Things video, using the expressions time, index, loopOut, and random in After Effects.",
             "fields": "Video Post-Production, Illustration",
             "software": "Adobe Illustrator, Adobe After Effects",
             "link": "https://youtu.be/6qXUdbj3CvM",
-            "img": "img/works/stranger-things.png"
+            "img": "img/works/stranger-things.png",
+            "video": "https://youtu.be/6qXUdbj3CvM"
+        },
+        {
+            "id": 19,
+            "title": "Diwine Liberation",
+          "overview": "Diwine Liberation is a video mapping project created during the VII Workshop Empúries at the MAC Empúries, in collaboration with Mònica González, Anna Cuello, Adelina Mateoiu and Simina Haiduc.\n\nThe piece immerses viewers in an unforgettable night of celebration, mystery and liberation, seen through the eyes of Dionysos, the god who embodies the essence of wine.\n\nInspired by ancient legends, the animation follows Dionysos on his return to Empúries, where he encounters the Ménades and their enchanting rituals.\n\nWine, as the central element, becomes the elixir of life, a symbol of freedom and expression for women, and a drink that unleashes inner desires in men.\n\nThe project was conceived, designed and animated in just one day, blending mythology, symbolism and visual rhythm in a collective artistic expression.",
+
+             "img": "img/works/diwine.png",
+            "video": "https://youtu.be/78bxupb0LoM"
         }
     ],
     "Magazine Design": [
         {
+            "id": 10,
             "title": "Cooking Magazine",
             "description": "Creation of the visual identity and interface for a yoga mobile application.",
             "fields": "Graphic Design, Layout and Composition",
@@ -95,6 +136,7 @@
             "img": "img/works/cooking.png"
         },
         {
+            "id": 11,
             "title": "Underwater Magazine",
             "description": "Design of a Marine-Themed Magazine. Two versions of the magazine have been created: one for print and another interactive version.",
             "fields": "Graphic Design, Layout and Composition, Creation of an interactive PDF",
@@ -105,6 +147,7 @@
     ],
     "UI Design": [
         {
+            "id": 12,
             "title": "Chi Life, a yoga App",
             "description": "Creation of the visual identity and interface for a yoga mobile application.",
             "fields": "Branding, Graphic Design, UI Design",
@@ -113,6 +156,7 @@
             "img": "img/works/chi-life.png"
         },
         {
+            "id": 13,
             "title": "La Carta dels Reis Mags",
             "description": "Front-End Design and Development of an e-commerce website for ordering gifts for the Three Kings.",
             "fields": "Web Design, Front-end development",
@@ -122,6 +166,7 @@
             "img": "img/works/carta.png"
         },
         {
+            "id": 14,
             "title": "Next Cast, a Podcast website",
             "description": "Creation and design of a website using React and the Spotify Web API",
             "fields": "UI Design, Website development",
@@ -131,6 +176,7 @@
             "img": "img/works/next-cast.png"
         },
         {
+            "id": 15,
             "title": "EVENT+, A Website for Events",
             "description": "Creation and design of a website to inform about cultural events with an editor for the database.",
             "fields": "Web Design, Front-end development, Back-end development with PHP",
@@ -140,6 +186,7 @@
             "img": "img/works/event.png"
         },
         {
+            "id": 16,
             "title": "MyRecipeBook",
             "description": "Creation and design of an Android mobile application to create and save recipes.",
             "fields": "UI Design, Andoid development",
@@ -147,38 +194,16 @@
             "languages": "Flutter, Dart",
             "link": "",
             "img": "img/works/my-recipe.png"
-        }
-    ],
-    "Posters and Flyers": [
-        {
-            "title": "La Violencia es el miedo a los ideales de los demás",
-            "img": ""
         },
         {
-            "title": "CITM Talents",
-            "img": ""
-        },
-        {
-            "title": "Poster mar",
-            "img": ""
-        },
-        {
-            "title": "Cadaqués",
-            "img": ""
-        }
-    ],
-        "Photography": [
-        {
-            "img": "La Violencia es el miedo a los ideales de los demás"
-        },
-        {
-            "img": "CITM Talents"
-        },
-        {
-            "img": "Poster mar"
-        },
-        {
-            "img": "Cadaqués"
+            "id": 17,
+            "title": "BookEcho",
+            "description": "Creation and design of an Android mobile application for book registration",
+            "fields": "Ux and UI Design, React Native",
+            "software": "Visual Studio Code, Figma",
+            "languages": "React Native",
+            "link": "",
+            "img": "img/works/book-echo.png"
         }
     ]
 }
