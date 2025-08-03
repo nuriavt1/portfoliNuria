@@ -87,6 +87,7 @@
     style="width: 100%; height: 100%; border: none;"
     allowfullscreen>
   </iframe>
+
 </div>
 
               `;
@@ -110,11 +111,21 @@
             <p class="category">${project.category || ''}</p>
             
             </div>
-  <div class="images-content">
-            <img src="${project.img2 || 'img/placeholder.jpg'}" alt="${project.title}" style="max-width:100%; height:auto;" />
-          <img src="${project.img3}" alt="${project.title}" style="max-width:100%; height:auto;" />
-             <img src="${project.img4}" alt="${project.title}" style="width:100%; height:auto;" /> 
-          </div>  
+ <div class="images-content">
+  ${project.img2 ? `<img src="${project.img2}" alt="${project.title}" style="max-width:100%; height:auto;" />` : ""}
+  ${project.img3 ? `<img src="${project.img3}" alt="${project.title}" style="max-width:100%; height:auto;" />` : ""}
+  ${project.img4 ? `<img src="${project.img4}" alt="${project.title}" style="width:100%; height:auto;" />` : ""}
+</div>
+
+${project.figma ? `
+<iframe 
+  style="border: 1px solid rgba(0, 0, 0, 0.1);" 
+  width="${project.widthPro || '100%'}"
+  height="${project.heightPro || '500'}"
+  src="https://www.figma.com/embed?embed_host=share&url=${project.figma}" 
+  allowfullscreen>
+</iframe>` : ""}
+
           <h3>Tools</h3>
           <p>${project.software}</p>
  

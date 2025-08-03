@@ -14,7 +14,10 @@
             "img2": "img/details/masks2.png",
             "img3": "img/details/masks3.png",
             "img4": "img/details/hudmasks.png",
-            "video": "https://youtu.be/Ysv7c4oLHxw"
+            "video": "https://youtu.be/Ysv7c4oLHxw",
+            "figma": "https://www.figma.com/proto/7uUX8COvQNMIDUcXCeRvUa/Giravolt_N%C3%BAriaV?page-id=&node-id=1-5099&starting-point-node-id=1%3A5099&t=eBGMqdnWw5qIkotb-1",
+            "widthPro": "80%",
+            "heightPro": "650px"
         },
         {
             "id": 2,
@@ -56,12 +59,16 @@
             "fields": "Ux and UI Design, React, Postproduction, 360",
             "software": "Visual Studio Code, Figma, Unity, Adobe Photoshop, Adobe Illustrator, Maya, Adobe Substance",
             "languages": "React",
-            "link": "",
+            "link": "https://youtube.com/playlist?list=PLwHrPTaTeldz7ppV_5GMNSemtHZyx5By2&si=BUvjxlgn5ea46osq",
             "img": "img/works/barcimed.png",
             "img2": "img/details/bar1.png",
             "img3": "img/details/bar2.png",
             "img4": "img/details/bar3.png",
-            "video": "https://youtu.be/RbcJslGVbDI"
+            "video": "https://youtu.be/RbcJslGVbDI",
+            "figma":"https://www.figma.com/deck/Hcmd4oh7rCqIm9UHkLmwYF/Barcimed_Presentaci%C3%B3?node-id=123-6237&viewport=-222%2C-236%2C1.05&t=LXCUZM0qlvrH6Wct-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+            "widthPro": "80%",
+            "heightPro": "650px"
+
         }
     ],
     "Visual identity": [
@@ -99,6 +106,8 @@
             "id": 6,
             "title": "Advertising Spot for Vicio",
             "description": "Creation of an advertising campaign for the VICIO brand. This includes 1 video advertising spot and 3 images.",
+            "overview": "Creation of an advertising campaign for the VICIO brand. This includes 1 video advertising spot and 3 images.",
+            "role": "I was responsible for the scriptwriting, storyboard, video production and post-production, as well as editing the campaign photographs used for posters and social media stories.",
             "fields": "Script and Storyboard, Video Production, Video Post-Production, Photography, Photo Editing",
             "software": "Adobe Premiere, Adobe After Effects, DaVinci Resolve, Adobe Photoshop",
             "link": "https://youtu.be/-d0ecNgpMxA",
@@ -114,8 +123,8 @@
             "id": 7,
             "title": "Teaser “Las Manos Que Crecen”",
             "description": "Creation of a 2D Animation Teaser inspired by the short story \"Las Manos Que Crecen\" by Julio Cortázar.",
-            "overview":"Creation of a 2D Animation Teaser inspired by the short story 'Las Manos Que Crecen' by Julio Cortázar.",
-            "role":"In this project, I was responsible for the scriptwriting, storyboard, character design, environment design, and the animation of several scenes.",
+            "overview": "Creation of a 2D Animation Teaser inspired by the short story 'Las Manos Que Crecen' by Julio Cortázar.",
+            "role": "In this project, I was responsible for the scriptwriting, storyboard, character design, environment design, and the animation of several scenes.",
             "fields": "Script, Storyboard, and Pre-production, Concept Art and Character Design, 2D Animation",
             "software": "Adobe Photoshop, Adobe Illustrator, Toon Boom Harmony",
             "link": "https://youtu.be/mDIbqcnRuZU",
@@ -132,6 +141,7 @@
             "title": "Chernobyl Opening",
             "description": "Creation of an opening for the series Chernobyl, using the music and visual structure of the Narcos intro.",
             "overview": "Creation of an opening for the series Chernobyl, using the music and visual structure of the Narcos intro.",
+            "role": "",
             "fields": "Video Post-Production, Photo Editing",
             "software": "Adobe Premiere, Adobe After Effects, Adobe Photoshop",
             "link": "https://youtu.be/lOEURC_jeuQ",
@@ -143,6 +153,7 @@
             "title": "Stranger Things clock",
             "description": "Creation of a Stranger Things video, using the expressions time, index, loopOut, and random in After Effects.",
             "overview": "Creation of a Stranger Things video, using the expressions time, index, loopOut, and random in After Effects.",
+            "role": "",
             "fields": "Video Post-Production, Illustration",
             "software": "Adobe Illustrator, Adobe After Effects",
             "link": "https://youtu.be/6qXUdbj3CvM",
@@ -152,50 +163,46 @@
         {
             "id": 19,
             "title": "Diwine Liberation",
+            "description": "Diwine Liberation is a video mapping project created during the VII Workshop Empúries at the MAC Empúries.",
             "overview": "Diwine Liberation is a video mapping project created during the VII Workshop Empúries at the MAC Empúries, in collaboration with Mònica González, Anna Cuello, Adelina Mateoiu and Simina Haiduc.\n\nThe piece immerses viewers in an unforgettable night of celebration, mystery and liberation, seen through the eyes of Dionysos, the god who embodies the essence of wine.\n\nInspired by ancient legends, the animation follows Dionysos on his return to Empúries, where he encounters the Ménades and their enchanting rituals.\n\nWine, as the central element, becomes the elixir of life, a symbol of freedom and expression for women, and a drink that unleashes inner desires in men.\n\nThe project was conceived, designed and animated in just one day, blending mythology, symbolism and visual rhythm in a collective artistic expression.",
+            "role":"",
+            "link":"https://www.playbook.com/s/nuriav/Dn6GbMVPKn46S7LjLSu3Ju5V?assetToken=Q4tH7t97jpGdAVxuzh4WubZj",
             "img": "img/works/diwine.png",
-            "video": "https://youtu.be/78bxupb0LoM"
+            "video": "https://youtu.be/78bxupb0LoM",
+            "software": "Adobe After Effects, Adobe Photoshop"
         }
     ],
     "Magazine Design": [
-        {
-            "id": 10,
-            "title": "Cooking Magazine",
-            "description": "Creation of the visual identity and interface for a yoga mobile application.",
-            "fields": "Graphic Design, Layout and Composition",
-            "software": "Adobe Illustrator",
-            "link": "",
-            "img": "img/works/cooking.png"
-        },
+
         {
             "id": 11,
             "title": "Underwater Magazine",
             "description": "Design of a Marine-Themed Magazine. Two versions of the magazine have been created: one for print and another interactive version.",
+            "overview":"Design of a Marine-Themed Magazine. Two versions of the magazine have been created: one for print and another interactive version.",
+            "role": "",
             "fields": "Graphic Design, Layout and Composition, Creation of an interactive PDF",
             "software": "Adobe InDesign",
-            "link": "",
-            "img": "img/works/underwater.png"
+            "link": "https://www.playbook.com/s/nuriav/6j7jFiPeh7avJRpqxasCx9kc?assetToken=APL114ByhWajdSUyrs1fUuZ5",
+            "img": "img/works/underwater.png",
+            "img2":"img/details/water2.png",
+            "img3":"img/details/water3.png"
         }
     ],
-    "UI Design": [
-        {
-            "id": 12,
-            "title": "Chi Life, a yoga App",
-            "description": "Creation of the visual identity and interface for a yoga mobile application.",
-            "fields": "Branding, Graphic Design, UI Design",
-            "software": "Adobe Photoshop, Adobe Illustrator",
-            "link": "",
-            "img": "img/works/chi-life.png"
-        },
+    "UX/UI Design and development": [
+      
         {
             "id": 13,
             "title": "La Carta dels Reis Mags",
             "description": "Front-End Design and Development of an e-commerce website for ordering gifts for the Three Kings.",
+            "overview":"Front-end design and development of an e-commerce website for ordering Three Kings’ Day gifts. The site was built using HTML, CSS, and JavaScript.",
+            "role":"",
             "fields": "Web Design, Front-end development",
-            "software": "Visual Studio Code, Filezilla",
+            "software": "Visual Studio Code, Filezilla, HTML, CSS, Java Script",
             "languages": "HTML, CSS, Java Script",
-            "link": "",
-            "img": "img/works/carta.png"
+            "link": "https://citmalumnes.upc.es/~nuriavt1/2n%20curs/practica4nuriav/",
+            "img": "img/works/carta.png",
+             "img2":"img/details/reis2.png",
+              "img3":"img/details/reis3.png"
         },
         {
             "id": 14,
@@ -205,37 +212,54 @@
             "software": "Visual Studio Code",
             "languages": "React, JavaScript, CSS, HTML",
             "link": "https://nextcast-nurias-projects-e4c7ec93.vercel.app/",
+            "video":"https://youtu.be/5-WCPx4PCxc",
             "img": "img/works/next-cast.png"
         },
         {
             "id": 15,
             "title": "EVENT+, A Website for Events",
             "description": "Creation and design of a website to inform about cultural events with an editor for the database.",
+            "overview":"Creation and design of a website for sharing information about cultural events, featuring a custom database editor. I first designed the user interface in Figma, and then developed the site using HTML, CSS, PHP, and SQL, with a MariaDB database. The website includes a registration and login system, and an admin panel that allows the author to add and manage content directly in the database.",
+            "role": "",
             "fields": "Web Design, Front-end development, Back-end development with PHP",
             "software": "Visual Studio Code, Filezilla, Figma, Maria DB",
             "languages": "HTML, CSS, PHP, SQL",
-            "link": "",
-            "img": "img/works/event.png"
+            "link": "https://citmalumnes.upc.es/~nuriavt1/vaquero%20_nuria_P04BBDD/",
+            "img": "img/works/event.png",
+            "img2": "img/details/event2.png",
+            "img3": "img/details/event3.png"
+
         },
         {
             "id": 16,
             "title": "MyRecipeBook",
             "description": "Creation and design of an Android mobile application to create and save recipes.",
+            "overview":"Creation and design of an Android mobile application for creating and saving recipes. I first designed the user interface in Figma, and then developed the app in Android Studio using Flutter and Dart.",
+            "role":"",
             "fields": "UI Design, Andoid development",
-            "software": "Andoid Studio, Figma",
+            "software": "Andoid Studio, Figma, Flutter, Dart",
             "languages": "Flutter, Dart",
             "link": "",
-            "img": "img/works/my-recipe.png"
+            "img": "img/works/my-recipe.png",
+            "img4": "img/details/recip4.png"
         },
         {
             "id": 17,
             "title": "BookEcho",
             "description": "Creation and design of an Android mobile application for book registration",
+            "overview": "In a team of four, we designed and developed an Android mobile application for book registration. The app includes features such as saving books into custom lists, completing reading challenges, and adding reviews and ratings. It is connected to a Supabase database and built using React Native.",
+            "role": "",
             "fields": "Ux and UI Design, React Native",
             "software": "Visual Studio Code, Figma",
             "languages": "React Native",
             "link": "https://youtu.be/bruBCcbozaA",
-            "img": "img/works/book-echo.png"
+            "img": "img/works/book-echo.png",
+            "img2": "img/details/book2.png",
+            "img3": "img/details/book3.png",
+            "video": "https://youtu.be/bruBCcbozaA",
+            "figma": "https://www.figma.com/proto/8la1TXmBR2wct1oKbV7NL4/disseny-app?page-id=89%3A3164&node-id=167-18536&p=f&viewport=943%2C-139%2C0.14&t=VvtCPaHp5jKWapqp-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=167%3A18531",
+            "widthPro": "360px",
+            "heightPro": "808px"
         }
     ]
 }
