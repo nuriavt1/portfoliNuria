@@ -97,6 +97,7 @@ p{
 .header{
     position: fixed;
     width: 100%;
+    z-index: 2; 
 }
 
 .header-comp {
@@ -146,6 +147,16 @@ p{
   border-bottom: 2px solid #000; /* o un efecte més modern */
 }
 
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #E63A27;
+  z-index: 10001;
+}
+
 /*COMPONENT FOOTER*/
 .footer-comp{
     width: 100%;
@@ -189,6 +200,112 @@ p{
 
 .presentation{
   width: 80%;
+}
+
+/*CARROUSEL INDEX*/
+/* === CARRUSEL GENERAL === */
+.carrousel {
+  padding: 4rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* === ESTRUCTURA DEL CARRUSEL === */
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  justify-content: center;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+  scrollbar-width: none;      /* Firefox */
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;              /* Chrome, Safari */
+}
+
+.carousel-slide {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* === BOTONES DE FLECHAS === */
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #d8483f;
+  cursor: pointer;
+  padding: 0 1rem;
+  z-index: 2;
+  display: none;              /* ← se activan por JS si hay overflow */
+}
+
+.carousel-btn:hover {
+  color: #a2332f;
+}
+
+.button-style:hover {
+  background-color: #a2332f;
+}
+
+/*CONTACT SECTION*/
+#contact-section{
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+  background-color: #E63A27;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.contact-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+}
+
+.contact-text p{
+color:#FFFFFF;
+}
+
+#contact-img{
+width: 323px;
+height: 323px;
+
+}
+
+.contact-text h3{
+  color:#FFFFFF;
+ 
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.icons-container{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 /*cv EXPERIENCE*/
@@ -302,7 +419,7 @@ gap: 20px;
 #projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(339px, 1fr));
- 
+  gap: 36px;
   max-width: 2000px;         /* o lo que encaje con tu diseño */
   margin: 0 auto;            /* centra el bloque */
   padding: 2rem;
@@ -313,18 +430,22 @@ gap: 20px;
 
 /*CARD PROJECTS*/
 .project-card {
-
-  width: 339px;
-  height: 435px;
+  position: relative;
+  width: 100%;              /* ✅ en lugar de 339px */
+  max-width: 339px;         /* ⛔ O BIEN puedes usar directamente max-width si lo prefieres */
+  height: auto;             /* si quieres que crezca según contenido */
   margin: 1rem;
   font-family: 'Urbanist', sans-serif;
-
+  z-index: 0;
+  flex: 0 0 auto;           /* 🔑 Esto es clave para evitar que se estire */
 }
 
-.image-wrapper {
 
+.image-wrapper {
+  position: relative;
   overflow: hidden;
-  height: 435px;
+  /*height: 435px;*/
+  z-index: 0; 
 }
 
 .image-wrapper img {
@@ -340,7 +461,9 @@ gap: 20px;
 }
 
 .overlay {
-
+  position: absolute;
+  top: 0;
+  left: 0;
  width: 100%;
   height: 100%;
   background-color: #9CC7AB; /* verd opac */
@@ -470,6 +593,13 @@ gap: 20px;
 }
 
 /*RESPONSIVE*/
+
+@media (max-width: 1200px) {
+  .carousel-slide {
+    width: calc((100% - 4rem) / 3); /* 3 tarjetas */
+  }
+}
+
 @media (max-width: 900px){
   .cv {
   display: grid;
@@ -479,4 +609,47 @@ gap: 20px;
   #sect-dos{
    grid-column: 1;
 }
+
+ .carousel-slide {
+    width: calc((100% - 2rem) / 2); /* 2 tarjetas */
+}}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: rgba(244, 243, 237, 0.95);
+    padding: 1rem 1.5rem;
+    width: 200px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 9999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #E63A27;
+    cursor: pointer;
+    z-index: 10000;
+  }
+
+  .header-comp ul {
+    gap: 1rem;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .carousel-slide {
+    width: 100%; /* 1 tarjeta */
+  }
 }

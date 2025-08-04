@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +9,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 </head>
 
 
@@ -50,15 +53,111 @@
 
   <main>
     <div class="hero">
-    <h1>Hello! I'm Núria</h1>
-    <h1>A creative  multimedia designer based in Barcelona</h1>
+      <h1>Hello! I'm Núria</h1>
+      <h1>A creative multimedia designer based in Barcelona</h1>
     </div>
+    <section class="carrousel">
+  <h2>PROJECTS</h2>
+  <h3>See all I can do</h3>
+
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev">&#10094;</button>
+    <div class="carousel-track" id="carousel-track"></div>
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+
+  <button class="button-style" onclick="window.location.href='projects.html'">
+    MORE WORKS
+  </button>
+</section>
+
+<section id="contact-section">
+            <img src="img/contact.png" id="contact-image">
+            <div class="contact-text">
+                <h3>Contact</h3>
+
+                <div class="icons-container">
+<div class="icons">
+              <img src="img/lnw.png" >
+              <p>linkedin.com/in/núria-vaquero-tell</p>
+             </div>
+                
+                  <div class="icons">
+              <img src="img/instw.png" >
+                  <p>@nuriavdraws / @nuriavphotos</p>
+                </div>
+                
+                  <div class="icons">
+              <img src="img/tlw.png" >
+                <p>+34 618 517 258</p>
+                </div>
+
+                  <div class="icons">
+              <img src="img/emw.png" >
+                <p>nuriavtell@gmail.com</p>
+                   </div>
+                </div>
+             
+            </div>
+
+        </section>
+
+
 
   </main>
+<script type="module">
+  import { createProjectCard } from './components/project-card.js';
+
+  const TARGET_IDS = [1, 18, 16, 8];
+  const track = document.getElementById("carousel-track");
+  const prevBtn = document.querySelector(".carousel-btn.prev");
+  const nextBtn = document.querySelector(".carousel-btn.next");
+
+  // Función para comprobar si hay overflow y mostrar/ocultar flechas
+  function updateArrowVisibility() {
+    const isOverflowing = track.scrollWidth > track.clientWidth;
+    prevBtn.style.display = isOverflowing ? "block" : "none";
+    nextBtn.style.display = isOverflowing ? "block" : "none";
+  }
+
+  // Cargar datos del JSON y generar el carrusel
+  fetch("data/works.json")
+    .then(res => res.json())
+    .then(data => {
+      Object.entries(data).forEach(([category, projects]) => {
+        projects.forEach(project => {
+          if (TARGET_IDS.includes(project.id)) {
+            const card = createProjectCard(project, category);
+            const slide = document.createElement("div");
+            slide.classList.add("carousel-slide");
+            slide.appendChild(card);
+            track.appendChild(slide);
+          }
+        });
+      });
+
+      // Esperar un pequeño delay para asegurar que el DOM ha actualizado
+      setTimeout(updateArrowVisibility, 100);
+    });
+
+  // Navegación con flechas
+  prevBtn.addEventListener("click", () => {
+    track.scrollBy({ left: -350, behavior: "smooth" });
+  });
+
+  nextBtn.addEventListener("click", () => {
+    track.scrollBy({ left: 350, behavior: "smooth" });
+  });
+
+  // Recalcular visibilidad de flechas al redimensionar la ventana
+  window.addEventListener("resize", updateArrowVisibility);
+</script>
+
   <div id="footer"></div>
 
 
 
 
 </body>
+
 </html>

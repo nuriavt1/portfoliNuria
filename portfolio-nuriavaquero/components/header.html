@@ -1,10 +1,56 @@
 <!-- header.html -->
 <nav class="header-comp">
-  <img src="img/logo.svg" />
-  <ul>
+<a href="index.html">
+  <img src="img/logo.svg" class="logo" alt="Logo" />
+</a>
+
+
+  <button class="hamburger" id="hamburger-btn" aria-label="Open menu">
+    ☰
+  </button>
+
+  <ul class="nav-links" id="nav-links">
     <li><a href="index.html" class="nav-link">Home</a></li>
     <li><a href="aboutMe.html" class="nav-link">About Me</a></li>
     <li><a href="projects.html" class="nav-link">Projects</a></li>
-    <li><a href="contact.html" class="nav-link">Contact</a></li>
+    <!-- <li><a href="contact.html" class="nav-link">Contact</a></li> -->
   </ul>
 </nav>
+
+<script>
+  fetch("components/header.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+
+      // ⏳ Esperar a que el DOM se actualice
+      setTimeout(() => {
+        const hamburger = document.getElementById("hamburger-btn");
+        const nav = document.getElementById("nav-links");
+
+        if (!hamburger || !nav) return;
+
+        hamburger.addEventListener("click", (e) => {
+          e.stopPropagation(); // evita conflictos con otros clicks
+          nav.classList.toggle("active");
+        });
+
+        // Cierra el menú al hacer click en un enlace del nav
+        nav.querySelectorAll("a").forEach(link => {
+          link.addEventListener("click", () => {
+            nav.classList.remove("active");
+          });
+        });
+
+        // Opcional: cierra el menú si haces click fuera
+        document.addEventListener("click", (e) => {
+          if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+            nav.classList.remove("active");
+          }
+        });
+      }, 50); // pequeño delay para asegurar que el DOM esté actualizado
+    });
+</script>
+
+
+
