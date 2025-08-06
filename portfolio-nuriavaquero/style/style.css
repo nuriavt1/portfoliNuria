@@ -1,88 +1,135 @@
-
-
 html{
     background-color: #F4F3ED;
+    scroll-behavior: smooth;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
 }
 
 
 
-
 .hero {
-  background-image: url("../img/hero.png");
+  background-image: url("../img/placeholder2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh; /* o l'alçada que vulguis */
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 2rem;
-  color: white; /* assegura’t que es veu bé el text */
+  color: white;
+  animation: fadeInUp 1s ease-in-out;
 }
 
 .hero h1 {
   font-size: 3rem;
   margin: 0;
+  animation: fadeInUp 1.5s ease-in-out;
 }
 
 .hero p {
   font-size: 1.5rem;
+  animation: fadeInUp 2s ease-in-out;
 }
 
 h1{
   font-family: 'Urbanist', sans-serif;
-  font-weight: 500; /* Medium */
+  font-weight: 500;
   font-size: 64px;
-  letter-spacing: -0.04em; /* -4% */
-  line-height: 1.2; /* aproximació de 'Auto' */
+  letter-spacing: -0.04em;
+  line-height: 1.2;
+   animation: fadeInUp 1s ease forwards;
+  opacity: 0; /* necesario para animación inicial */
 }
 h2 {
   font-family: 'Urbanist', sans-serif;
-  font-weight: 700; /* ja és bold */
+  font-weight: 700;
   font-size: 24px;
   letter-spacing: 0.15em;
   color: #E63A27;
-  text-transform: uppercase; /* AIXÒ força les majúscules */
+  text-transform: uppercase;
+   animation: fadeInUp 1s ease forwards;
+  opacity: 0; /* necesario para animación inicial */
 }
 
 h3{
-    font-family: 'Urbanist', sans-serif;
-  font-weight: 500; /* Medium */
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 500;
   font-size: 36px;
-  letter-spacing: -0.04em; /* -4% */
-  line-height: 1.2; /* aproximació de 'Auto' */
-   color: #6DB8BE;
+  letter-spacing: -0.04em;
+  line-height: 1.2;
+  color: #6DB8BE;
+   animation: fadeInUp 1s ease forwards;
+  opacity: 0; /* necesario para animación inicial */
 }
+
+/* Opcional: escalonar la entrada con delays */
+h1 { animation-delay: 0.1s; }
+h2 { animation-delay: 0.2s; }
+h3 { animation-delay: 0.3s; }
+p { animation-delay: 0.4s; }
 
 p{
   font-family: 'Raleway', sans-serif;
   color: #333036;
   font-size: 16px;
+   animation: fadeInUp 1s ease forwards;
+  opacity: 0; /* necesario para animación inicial */
+  
 }
 
-/*Estilo botones*/
-/* Estilo botones */
 .button-style {
   border: 1px solid #E63A27;
   border-radius: 4px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding: 11px 24px;
   font-family: 'Covered by Your Grace', cursive;
   font-size: 24px;
   color: #E63A27;
   background-color: transparent;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
   width: fit-content;
+
+  /* ANIMACIÓN */
+  opacity: 0;
+   animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.3s; 
 }
+
+
+
+
 
 .button-style:hover {
   background-color: #E63A27;
   color: white;
+  transform: scale(1.05);
 }
 
 * {
@@ -91,13 +138,11 @@ p{
   box-sizing: border-box;
 }
 
-
-
-/*COMPONENT HEADER*/
 .header{
     position: fixed;
     width: 100%;
     z-index: 2; 
+    animation: fadeInUp 0.8s ease-in-out;
 }
 
 .header-comp {
@@ -109,17 +154,19 @@ p{
   position: sticky;
   top: 0;
   z-index: 10000;
-
-  /* 👇 Añade estas líneas */
-  background-color: rgba(244, 243, 237, 0.7); /* blanco semitransparente */
+  background-color: rgba(244, 243, 237, 0.7);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* compatibilidad Safari */
- 
+  -webkit-backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease;
 }
-
 
 .header-comp img {
   height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.header-comp img:hover {
+  transform: scale(1.1);
 }
 
 .header-comp ul {
@@ -132,19 +179,21 @@ p{
 
 .header-comp li a {
   text-decoration: none;
-  color: #E63A27; /* o el color del teu branding */
+  color: #E63A27;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.2s ease;
   font-family: "Urbanist", sans-serif;
 }
 
 .header-comp li a:hover {
-  color: #000; /* o un altre efecte hover */
+  color: #000;
+  transform: scale(1.05);
 }
+
 .nav-link.active {
   color: #000;
   font-weight: 700;
-  border-bottom: 2px solid #000; /* o un efecte més modern */
+  border-bottom: 2px solid #000;
 }
 
 .hamburger {
@@ -155,9 +204,14 @@ p{
   cursor: pointer;
   color: #E63A27;
   z-index: 10001;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/*COMPONENT FOOTER*/
+.hamburger.open {
+  transform: rotate(90deg);
+  color: #000;
+}
+
 .footer-comp{
     width: 100%;
     display: flex;
@@ -166,7 +220,30 @@ p{
     gap: 24px;
     padding-top: 24px;
     padding-bottom: 24px;
- 
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.footer-comp ul{
+  display: flex;
+  list-style: none;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-comp p{
+  font-family: 'Raleway', sans-serif;
+  color: #E63A27;
+  font-size: 14px;
+  animation: fadeInUp 1.5s ease-in-out;
 }
 .footer-comp ul{
  display: flex;
@@ -196,11 +273,16 @@ p{
     margin: 0px;
   padding: 0%;
   padding-top: 120px;
+  gap: 50px;
 }
 
 .presentation{
   width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
+
 
 /*CARROUSEL INDEX*/
 /* === CARRUSEL GENERAL === */
@@ -260,9 +342,7 @@ p{
   color: #a2332f;
 }
 
-.button-style:hover {
-  background-color: #a2332f;
-}
+
 
 /*CONTACT SECTION*/
 #contact-section{
@@ -331,7 +411,15 @@ height: 323px;
   padding-top: 20px;
   padding-bottom: 20px;
    border-bottom: 1px solid #333036;
+     animation: slideInLeft 0.8s ease forwards;
+  opacity: 0;
 }
+
+.experience-item:nth-child(1) { animation-delay: 0.1s; }
+.experience-item:nth-child(2) { animation-delay: 0.2s; }
+.experience-item:nth-child(3) { animation-delay: 0.3s; }
+.experience-item:nth-child(4) { animation-delay: 0.4s; }
+
 
 .p-date{
    font-family: 'Raleway', sans-serif;
@@ -375,7 +463,13 @@ height: 323px;
 }
 .award-item{
   width: 567px;
+    animation: slideInRight 0.8s ease forwards;
+  opacity: 0;
 }
+
+.award-item:nth-child(1) { animation-delay: 0.2s; }
+.award-item:nth-child(2) { animation-delay: 0.4s; }
+.award-item:nth-child(3) { animation-delay: 0.6s; }
 
 
 
