@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfoli Núria</title>
+ <link rel="icon" type="image/png" href="img/icon_nuria.png">
+
   <link rel="stylesheet" href="style/style.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -52,10 +54,32 @@
   <div id="header" class="header"></div>
 
   <main>
-    <div class="hero">
-      <h1>Hello! I'm Núria</h1>
-      <h1>A creative multimedia designer based in Barcelona</h1>
-    </div>
+<div class="hero">
+  <!-- Video de fondo desde YouTube -->
+  <div class="hero-video">
+    <iframe
+      src="https://www.youtube.com/embed/RbcJslGVbDI?autoplay=1&mute=1&loop=1&playlist=RbcJslGVbDI&controls=0&showinfo=0&modestbranding=1"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+      style="width:100%; height:100%; position:absolute; top:0; left:0; object-fit:cover;">
+    </iframe>
+  </div>
+
+  <!-- Capa oscura -->
+  <div class="hero-overlay"></div>
+
+  <!-- Contenido encima del video -->
+  <div class="hero-content">
+    <h1>Hello! I'm Núria</h1>
+    <h1>A creative multimedia designer based in Barcelona</h1>
+  </div>
+</div>
+
+
+
+
+
     <section class="carrousel">
   <h2>PROJECTS</h2>
   <h3>See all I can do</h3>
