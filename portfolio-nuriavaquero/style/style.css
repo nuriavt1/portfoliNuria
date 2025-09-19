@@ -41,9 +41,9 @@ html{
   text-align: center;
   padding: 2rem;
   /*color: white;*/
-  color: #E63A27;
+  color: #ffffff;
   overflow: hidden;
-   background: url("../img/hero.png") center / cover no-repeat;
+   background: url("../img/placeholder2.png") center / cover no-repeat;
 align-items: flex-end;
   }
 
