@@ -14,24 +14,8 @@
 
 </head>
 
+ <script src="/global.js"></script>
 <script>
-    // HEADER
-    fetch("components/header.html")
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById("header").innerHTML = data;
-
-            // Marcar enllaç actiu
-            const currentPage = window.location.pathname.split("/").pop();
-            const links = document.querySelectorAll(".nav-link");
-            links.forEach(link => {
-                if (link.getAttribute("href") === currentPage) {
-                    link.classList.add("active");
-                }
-            });
-        })
-        .catch(err => console.error("Error carregant el header:", err));
-
     // FOOTER
     fetch("components/footer.html")
         .then(res => res.text())
