@@ -676,7 +676,15 @@ gap: 20px;
 
  .carousel-slide {
     width: calc((100% - 2rem) / 2); /* 2 tarjetas */
-}}
+}
+h1{
+  font-size: 36px;
+}
+
+h3{
+  font-size: 28px;
+}
+}
 
 @media (max-width: 768px) {
   .nav-links {
